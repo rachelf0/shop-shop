@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
+import Cart from '../components/Cart';
 
-// the Home page component manages the state currentCategory, which is passed to the
-// ProductList component as a prop and instructs which category's products should be retrieved using Apollo
 const Home = () => {
   return (
     <div className="container">
       <CategoryMenu />
       <ProductList />
+      <Cart />
     </div>
   );
 };
